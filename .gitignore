@@ -1,0 +1,4 @@
+model.joblib
+metrics.json
+__pychache__/
+.pytest_cache/
