@@ -13,7 +13,7 @@ def load_data():
   return train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
 
 def train_model(X_train, y_train):
-  model = make_pipeline(StandardScaler(), LogisticRegression(C=1.0, max_iter=1000))
+  model = make_pipeline(StandardScaler(), LogisticRegression(C=0.001, max_iter=1000))
   model.fit(X_train, y_train)
   return model
 
